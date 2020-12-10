@@ -1,0 +1,235 @@
+﻿<div class="page-title">
+    <div class="title_left">
+        <h3>Danh sách phiếu nhập kho</h3>
+    </div>
+    <div class="title_right">
+        <div class="col-md-5 col-sm-5  form-group pull-right top_search">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="clearfix"></div>
+
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Điều kiện truy vấn</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Settings 1</a>
+                            <a class="dropdown-item" href="#">Settings 2</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <br />
+                <form class="form-label-left input_mask">
+
+                    <div class="col-md-6 col-sm-6 form-group row" style="margin-top:1%;">
+                        <label class="col-form-label col-md-4 col-sm-4 ">
+                            Thời gian nhập kho
+                        </label>
+                        <div class="col-md-8 col-sm-8 ">
+                            <input class="date-picker form-control" placeholder="dd-mm-yyyy" type="date" required="required">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 form-group row" style="margin-top:1%;">
+                        <label class="col-form-label col-md-4 col-sm-4 ">
+                            Thời gian lập phiếu
+                        </label>
+                        <div class="col-md-8 col-sm-8 ">
+                            <input class="date-picker form-control" placeholder="dd-mm-yyyy" type="date" required="required">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 form-group row">
+                        <label class="col-form-label col-md-4 col-sm-4 ">
+                            Mã phiếu nhập kho
+                        </label>
+                        <div class="col-md-8 col-sm-8 ">
+                            <input type="text" class="form-control" placeholder="Mã phiếu nhập kho">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 form-group row">
+                        <label class="col-form-label col-md-4 col-sm-4 ">
+                            Cán bộ làm phiếu
+                        </label>
+                        <div class="col-md-8 col-sm-8 ">
+                            <input type="text" class="form-control" placeholder="Cán bộ làm phiếu">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 form-group row">
+                        <label class="col-form-label col-md-4 col-sm-4 ">
+                            Sản phẩm
+                        </label>
+                        <div class="col-md-8 col-sm-8 ">
+                            <input type="text" class="form-control" placeholder="Sản phẩm">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 form-group row">
+                        <label class="col-form-label col-md-4 col-sm-4 ">
+                            Kho hàng nhập
+                        </label>
+                        <div class="col-md-8 col-sm-8 ">
+                            <input type="text" class="form-control" placeholder="Kho hàng nhập">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="col-md-9 col-sm-9" style="margin-left:26%;padding-left:50%">
+                            <button type="button" class="btn btn-primary">Thêm mới </button>
+                            <button type="submit" class="btn btn-success">Tìm kiếm</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+    
+</style>
+
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Danh sách phiếu nhập kho</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li>
+                        <a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <br />
+                <table style=" border: 2px solid #dddddd;margin:2%;">
+                    <tr>
+                        <th>ID</th>
+                        <th>Mã phiếu xuất kho</th>
+                        <th>Sản phẩm</th>
+                        <th>Thời gian xuất kho</th>
+                        <th>Thời gian lập phiếu</th>
+                        <th>Cán bộ lập phiếu</th>
+                        <th>Số lượng nhập</th>
+                        <th>Giá xuất</th>
+                        <th>Tổng tiền</th>
+                        <th>Action</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>CMR</td>
+                        <td>TIVI</td>
+                        <td> 12/10/2020</td>
+                        <td>12/10/2020</td>
+                        <td>Lê Văn A</td>
+                        <td>10</td>
+                        <td>200</td>
+                        <td>20000</td>
+                        <td><a><i class="fa fa-wrench"></i></a></td>
+                        <td><a><i class="fa fa-close"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CMR</td>
+                        <td>TIVI</td>
+                        <td> 12/10/2020</td>
+                        <td>12/10/2020</td>
+                        <td>Lê Văn A</td>
+                        <td>10</td>
+                        <td>200</td>
+                        <td>20000</td>
+                        <td><a><i class="fa fa-wrench"></i></a></td>
+                        <td><a><i class="fa fa-close"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>CMR</td>
+                        <td>TIVI</td>
+                        <td> 12/10/2020</td>
+                        <td>12/10/2020</td>
+                        <td>Lê Văn A</td>
+                        <td>10</td>
+                        <td>200</td>
+                        <td>20000</td>
+                        <td><a><i class="fa fa-wrench"></i></a></td>
+                        <td><a><i class="fa fa-close"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>CMR</td>
+                        <td>TIVI</td>
+                        <td> 12/10/2020</td>
+                        <td>12/10/2020</td>
+                        <td>Lê Văn A</td>
+                        <td>10</td>
+                        <td>200</td>
+                        <td>20000</td>
+                        <td><a><i class="fa fa-wrench"></i></a></td>
+                        <td><a><i class="fa fa-close"></i></a></td>
+                    </tr>
+
+                </table>
+                <nav aria-label="Page navigation example" style="padding-left:83%;">
+                    <ul class="pagination">
+
+                        <li class="page-item">
+                            <a class="page-link" href="" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a style="" class="page-link" href="">1</a></li>
+                        <li class="page-item"><a style="" class="page-link" href="">2</a></li>
+                        <li class="page-item"><a style="" class="page-link" href="">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
