@@ -142,3 +142,7 @@ D:\NewPrọect\Project\prosupp_quangtuyet\fondend\obj\Debug\fondend.csproj.CoreC
 D:\NewPrọect\Project\prosupp_quangtuyet\fondend\obj\Debug\fondend.csproj.CopyComplete
 D:\NewPrọect\Project\prosupp_quangtuyet\fondend\obj\Debug\fondend.dll
 D:\NewPrọect\Project\prosupp_quangtuyet\fondend\obj\Debug\fondend.pdb
+D:\NewPrọect\Project\prosupp_quangtuyet\fondend\bin\EntityFramework.dll
+D:\NewPrọect\Project\prosupp_quangtuyet\fondend\bin\EntityFramework.SqlServer.dll
+D:\NewPrọect\Project\prosupp_quangtuyet\fondend\bin\EntityFramework.xml
+D:\NewPrọect\Project\prosupp_quangtuyet\fondend\bin\EntityFramework.SqlServer.xml

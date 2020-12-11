@@ -132,7 +132,7 @@
             </div>
             <div class="x_content">
                 <br />
-                <table style=" border: 2px solid #dddddd;margin:2%;">
+                <table style=" border: 2px solid #dddddd;margin:2%;" id="lbl">
                     <tr>
                         <th>ID</th>
                         <th>Mã phiếu xuất kho</th>
@@ -146,7 +146,7 @@
                         <th>Action</th>
                         <th>Action</th>
                     </tr>
-                    <tr>
+                    @*<tr>
                         <td>1</td>
                         <td>CMR</td>
                         <td>TIVI</td>
@@ -197,7 +197,7 @@
                         <td>20000</td>
                         <td><a><i class="fa fa-wrench"></i></a></td>
                         <td><a><i class="fa fa-close"></i></a></td>
-                    </tr>
+                    </tr>*@
                 </table>
                 <nav aria-label="Page navigation example" style="padding-left:83%;">
                     <ul class="pagination">
@@ -226,6 +226,23 @@
 
 
 
+<script>
 
+
+        var settings = {
+      "url": "http://api-prosupp-quang.1sg.vn/api/Product/GetAll",
+      "method": "POST",
+      "timeout": 0,
+        };
+        debugger
+    $.ajax(settings).done(function (response) {
+        console.log(response.respObj);
+        for (var i = 0; i < response.respObj.length; i++) {
+            $('#lbl').append('<tr><td>' + response.respObj[i].ID + '</td><td>' + response.respObj[i].NameProduct + '</td><td>TIVI</td><td>' + response.respObj[i].PriceProduct + '</td><td>12/10/2020</td><td>' + response.respObj[i].ImageProduct +'</td><td>10</td><td>200</td><td>20000</td><td><a><i class="fa fa-wrench"></i></a></td><td><a><i class="fa fa-close"></i></a></td></tr >');
+        }
+      
+        
+    });
+</script>
 
 
