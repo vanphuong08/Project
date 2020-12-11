@@ -4843,6 +4843,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\addPhieuNhapKhoController.cs" />
     <Compile Include="Controllers\addPhieuXuatKhoController.cs" />
+    <Compile Include="Controllers\addSpController.cs" />
+    <Compile Include="Controllers\DanhMucSpController.cs" />
     <Compile Include="Controllers\dsnhapkhoController.cs" />
     <Compile Include="Controllers\dsxuatController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -4875,6 +4877,8 @@
     <Content Include="Views\dsnhapkho\Index.cshtml" />
     <Content Include="Views\addPhieuNhapKho\Index.cshtml" />
     <Content Include="Views\addPhieuXuatKho\Index.cshtml" />
+    <Content Include="Views\addSp\Index.cshtml" />
+    <Content Include="Views\DanhMucSp\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
